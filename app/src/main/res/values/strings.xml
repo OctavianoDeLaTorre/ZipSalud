@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">ZipSalud</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="datos">Datos básicos</string>
+    <string name="nombre">Nombre</string>
+    <string name="pa">Primer apellido</string>
+    <string name="sa">Segundo apellido</string>
+    <string name="telefono">Telefono de emergencia</string>
+    <string name="alergias">Alergias</string>
+    <string name="tSangre">Tipo de sangre</string>
+    <string name="Fecha">Fecha de nacimiento</string>
+    <string name="direccion">Dirección</string>
+    <string name="F">F</string>
+    <string name="M">M</string>
+    <string name="sexo">Sexo</string>
+
+
+    <string name="medico">En los últimos 12 meses ¿Ha visto por cualquier razón a algún profesional de la salud? Médico
+	general, especialista, otro.</string>
+    <string name="consumo">Consume o ha consumido en forma repetida o prolongada alguna de las siguientes sustancias:</string>
+    <string name="cigarro">¿Cigarrillo en los últimos 12 meses?</string>
+    <string name="alcohol">¿Bebidas alcohólicas?</string>
+    <string name="estupefacientes">¿Estupefacientes?</string>
+    <string name="sufre_hipertension">¿Sufre o ha sufrido de hipertensión arterial?</string>
+    <string name="actividad">¿Realiza actividad física moderada durante la semana?</string>
+    <string name="sobrepeso">¿Ha tenido o tiene sobrepeso u obesidad?</string>
+    <string name="colesterol">¿Sufre o ha sufrido de colesterol alto en la sangre?</string>
+    <string name="sufre_diabetes">¿Sufre o ha sufrido de diabetes o azúcar alta en la sangre?</string>
+    <string name="pasatiempo">¿Tiene algún pasatiempo?</string>
+
+    <string name="mujeres">Mujeres</string>
+    <string name="citologia">¿Se ha practicado citología vaginal durante los últimos 12 meses?</string>
+    <string name="embarazo_actual">¿Se encuentra en estado de embarazo?</string>
+    <string name="cantidad_embarazos">¿Cuántos embarazos ha tenido?</string>
+
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="respuesta">Responda lo siguiente</string>
+    <string name="seleccion">Selecciona Si o No según corresponda</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="familia">Tiene familiares con historia de:</string>
+    <string name="diabetes">¿Diabetes?</string>
+    <string name="cancer">¿Cáncer?</string>
+    <string name="hipertension">¿Hipertensión?</string>
+    <string name="corazon">¿Problemas de corazón?</string>
+    <string name="renal">¿Enfermedad renal?</string>
+    <string name="artritis">¿Artritis?</string>
+    <string name="mental">¿Enfermedad mental?</string>
+    <string name="procedimiento">¿Tiene conocimiento de que deba practicarse algún procedimiento quirúrgico por
+    enfermedad del corazón, medula ósea, y/o cornea?</string>
+    <string name="cirugia">¿Se ha sometido a algún tipo de cirugía?</string>
+    <string name="reemplazos">¿Se ha sometido o sabe que deba someterse a reemplazos articulares? Especifique cual</string>
+
+    <string name="cardiovascular">Ha sufrido o sufre enfermedades del aparato cardiovascular como:</string>
+    <string name="aneurismas">¿Aneurismas?</string>
+    <string name="arritmias">¿Arritmias?</string>
+    <string name="angina">¿Angina de pecho?</string>
+    <string name="infarto">¿Infarto?</string>
+    <string name="soplo">¿Soplo cardiaco?</string>
+    <string name="valvulas">¿Enfermedad de válvulas cardiacas?</string>
+
+    <string name="sistema_nervioso">Ha sufrido o sufre enfermedades del sistema nervioso como:</string>
+    <string name="cerebro">¿Cerebro?</string>
+    <string name="medula">¿Medula espinal?</string>
+    <string name="columna">¿Columna vertebral?</string>
+    <string name="epilepsia">¿Epilepsia?</string>
+    <string name="convulsiones">e)¿Convulsiones?</string>
+    <string name="psiquiatrica">¿Ha sufrido o sufre enfermedad mental y/ psiquiátrica?</string>
+    <string name="intrafamiliar">¿Alguna vez ha sido víctima de violencia intrafamiliar?</string>
+    <string name="episodios_vintrafamiliar">¿Ha vivido usted episodios de violencia intrafamiliar?</string>
+    <string name="episodios_vsexual">¿Ha vivido usted episodios de violencia sexual?</string>
+    <string name="p_pulmonares">Ha sufrido o sufre problemas pulmonares como:</string>
+    <string name="asma">¿Asma?</string>
+    <string name="bronquitis">¿bronquitis?</string>
+    <string name="epoc">¿EPOC?</string>
+    <string name="renal_cronica">¿Ha sufrido o sufre enfermedad renal crónica?</string>
+    <string name="sida">¿Se le ha diagnosticado o ha recibido tratamiento para SIDA?</string>
+
+    <string name="sufre">Ha sufrido o sufre:</string>
+    <string name="linfoma"> ¿Linfoma?</string>
+    <string name="leucemia">¿Leucemia?</string>
+    <string name="mieloma">¿Mieloma?</string>
+    <string name="malformacion">¿Tiene alguna malformación, deformación, imperfección o anomalía congénita?</string>
+    <string name="medicamento">¿Consume algún medicamento en forma crónica o permanente?</string>
+    <string name="enfermedad">¿Tiene alguna enfermedad no relacionada anteriormente?</string>
+    <string name="title_activity_menu_lateral">MenuLateral</string>
+
+    <string name="pdf">Obtener PDF</string>
+    <string name="qr">Obtener QR</string>
+    <string name="configuracion">Configuración</string>
+    <string name="actualizar">Actualizar información</string>
+    <string name="citas">Control de citas</string>
+    <string name="tratmientos">Control de tratamientos</string>
+    <string name="salir">Cerrar sesión</string>
+    <string name="ac">Nueva Cita</string>
+    <string name="at">Nuevo tratamiento</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="dr">Médico</string>
+    <string name="guardar">Guardar</string>
+    <string name="nt">Nombre del tratamiento</string>
+    <string name="duracion">Duración (Días)</string>
+    <string name="frecuencia">Frecuencia de toma (horas)</string>
+    <string name="dosis">Dosis</string>
+    <string name="iniciar">Fecha de inicio</string>
+    <string name="vis_pdf">Visualizar PDF</string>
+    <string name="comp_pdf">Compartir PDF</string>
+    <string name="guardar_pdf">Guardar PDF</string>
+    <string name="vis_qr">Visualizar QR</string>
+    <string name="comp_qr">Compartir QR</string>
+    <string name="guardar_qr">Guardar QR</string>
+    <string name="texpdf">PDF</string>
+    <string name="texqr">Código QR</string>
+    <string name="lock">¿MOSTRAR EN PANTALLA DE BLOQUEO?</string>
+
+    <string name="no_login">No se pudo iniciar sesión, revisa tu conexion a internet....</string>
+    <string name="registro_exitoso">Infomación guadar con exito...</string>
+    <string name="registro_no_exitoso">Ocurrio un error al guardar la información....</string>
+    <string name="obligatorio">Campo obligatorio....</string>
+    <string name="opcional">Campo opcional....</string>
+    <string name="leer_qr">Leer QR</string>
+    <string name="ok">Aceptar</string>
+    <string name="inf_qr">Inforación QR</string>
+
+    <string name="qr_desc">El código QR generado por ZipSalud con tiene la información básica del
+        usuario como nombre completo, dirección, teléfono, tipo de sangre, alergias y fecha de
+        nacimiento.
+    </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

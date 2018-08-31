@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gris"
+    tools:context=".QrFragment">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_layauts"
+            android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/qr_desc"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnGuardarQR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_botones"
+            android:drawableLeft="@drawable/ic_save_white_18dp"
+            android:text="@string/guardar_qr"
+            android:textColor="@color/blanco"
+            app:layout_constraintEnd_toEndOf="@+id/imageQR"
+            app:layout_constraintStart_toStartOf="@+id/imageQR"
+            app:layout_constraintTop_toBottomOf="@+id/imageQR" />
+
+        <Button
+            android:id="@+id/btnVisualizarQR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_botones"
+            android:drawableLeft="@drawable/ic_photo_camera_white_18dp"
+            android:text="@string/leer_qr"
+            android:textColor="@color/blanco"
+            app:layout_constraintEnd_toEndOf="@+id/btnGuardarQR"
+            app:layout_constraintStart_toStartOf="@+id/btnGuardarQR"
+            app:layout_constraintTop_toBottomOf="@+id/btnGuardarQR" />
+
+        <Button
+            android:id="@+id/btnCompartirQR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_botones"
+            android:drawableLeft="@drawable/ic_share_white_18dp"
+            android:text="@string/comp_qr"
+            android:textColor="@color/blanco"
+            app:layout_constraintEnd_toEndOf="@+id/btnVisualizarQR"
+            app:layout_constraintStart_toStartOf="@+id/btnVisualizarQR"
+            app:layout_constraintTop_toBottomOf="@+id/btnVisualizarQR" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/lock"
+            app:layout_constraintEnd_toEndOf="@+id/btnCompartirQR"
+            app:layout_constraintStart_toStartOf="@+id/btnCompartirQR"
+            app:layout_constraintTop_toBottomOf="@+id/btnCompartirQR"
+            android:textSize="11dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

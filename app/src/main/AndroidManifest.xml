@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zipsalud">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.providers.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <activity
+            android:name=".menuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar_2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Actividades" />
+        <activity android:name=".EnfermedadesCardiovasculares"/>
+
+        <activity android:name=".EnfermedadesCongenitas" />
+        <activity android:name=".EnfermedadesFamiliares" />
+        <activity android:name=".EnfermedadesSistemaNervioso" />
+        <activity android:name=".Mujer" />
+        <activity android:name=".Datos" />
+        <activity android:name=".Citas" />
+        <activity android:name=".tratamientos" />
+        <activity android:name=".PDF" />
+        <activity android:name=".QR" />
+        <activity android:name=".Configuracion" />
+        <activity android:name=".NuevoTratamiento" />
+        <activity android:name=".NuevaCita"></activity>
+        
+    </application>
+
+
+
+</manifest>

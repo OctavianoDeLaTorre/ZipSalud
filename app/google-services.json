@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "753004738747",
+    "firebase_url": "https://zipsaludv2.firebaseio.com",
+    "project_id": "zipsaludv2",
+    "storage_bucket": "zipsaludv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753004738747:android:01db1a0291ed5315",
+        "android_client_info": {
+          "package_name": "com.zipsalud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753004738747-j9qobjuru32s97l9fpjatmcllp05genr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zipsalud",
+            "certificate_hash": "25d64335f5223d1a5d8f08cdbbaeaf15001f3ace"
+          }
+        },
+        {
+          "client_id": "753004738747-jj9ea62lkr5jg0jja8r6e18arlc9l6l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWzAtr3znRJ39Y_vc792Ys1bbPZ9aMPn4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753004738747-jj9ea62lkr5jg0jja8r6e18arlc9l6l3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

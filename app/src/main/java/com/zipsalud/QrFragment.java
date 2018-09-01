@@ -1,7 +1,9 @@
 package com.zipsalud;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -15,6 +17,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.zxing.WriterException;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.zipsalud.controlador.CompartirIMG;
 import com.zipsalud.controlador.ControladorIMG;
 import com.zipsalud.controlador.ControladorQR;
@@ -106,14 +110,11 @@ public class QrFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_qr,container,false);
-
-
-
         return inflater.inflate(R.layout.fragment_qr, container, false);
     }
+
+
 
 }

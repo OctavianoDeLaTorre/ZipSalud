@@ -162,8 +162,8 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
      */
     private fun getRuta(): File? {
        var ruta: File? = null
-        if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())){
-            ruta =  File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
+        if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageDirectory())){
+            ruta =  File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
                     NOMBRE_DIRECTORIO)
             if (ruta != null) {
                 if (!ruta.mkdirs()) {

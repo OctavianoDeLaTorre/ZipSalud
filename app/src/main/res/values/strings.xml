@@ -45,12 +45,29 @@
     <string name="seleccion">Selecciona Si o No según corresponda</string>
     <string name="siguiente">Siguiente</string>
 
-    <string name="familia">Tiene familiares con historia de:</string>
-    <string name="diabetes">¿Diabetes?</string>
-    <string name="cancer">¿Cáncer?</string>
-    <string name="hipertension">¿Hipertensión?</string>
-    <string name="corazon">¿Problemas de corazón?</string>
-    <string name="renal">¿Enfermedad renal?</string>
+    <string name="familia">Tiene familiares que sufren de las siguientes enfermedades:</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="cancer">Cáncer</string>
+    <string name="hipertension">Hipertensión</string>
+    <string name="corazon">Problemas cardiovasculares</string>
+    <string name="renal">Problemas renales</string>
+    <string name="tiroideos">Problemas tiroideos</string>
+    <string name="autoinmunes">Problemas autoinmunes</string>
+
+    <!-- Almentación-->
+    <string name="alimentos">Indique el consumo semanal de los siguientes alimentos</string>
+    <string name="huevo">Huevo</string>
+    <string name="leche">Leche</string>
+    <string name="carne">Carne</string>
+    <string name="verduras">Verduras</string>
+    <string name="frutas">Frutas</string>
+    <string name="cereales">Cereales</string>
+    <string name="leguminosas">Leguminosas</string>
+    <string name="piezas">piezas</string>
+    <string name="veces">Veces</string>
+    <string name="lt">Litros por día</string>
+
+
     <string name="artritis">¿Artritis?</string>
     <string name="mental">¿Enfermedad mental?</string>
     <string name="procedimiento">¿Tiene conocimiento de que deba practicarse algún procedimiento quirúrgico por

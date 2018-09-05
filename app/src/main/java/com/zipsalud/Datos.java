@@ -1,5 +1,6 @@
 package com.zipsalud;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -41,17 +42,18 @@ public class Datos extends AppCompatActivity {
 
     private IdUsuario idUsuario;
 
+    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
 
-        Spinner spinner = findViewById(R.id.spSangre);
+        @SuppressLint("CutPasteId") Spinner spinner = findViewById(R.id.spSangre);
         String[] letra = {"...","A+","A-","B+","B-","AB+","AB-","O+","O-"};
-        spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letra));
+        spinner.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, letra));
 
 
-        tv = (TextView) findViewById(R.id.txtFechaNac);
+        tv = findViewById(R.id.txtFechaNac);
         mCurrentDate = Calendar.getInstance();
         day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
         month = mCurrentDate.get(Calendar.MONTH);
@@ -61,7 +63,7 @@ public class Datos extends AppCompatActivity {
 
         month = month+1;
 
-        tv.setText(day+"/"+month+"/"+year);
+        tv.setText(String.format("%d/%d/%d", day, month, year));
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

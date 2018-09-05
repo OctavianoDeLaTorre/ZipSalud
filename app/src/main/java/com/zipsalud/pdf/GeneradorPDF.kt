@@ -4,6 +4,7 @@
 
 package com.zipsalud.pdf
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Resources
 import android.os.AsyncTask
@@ -11,26 +12,19 @@ import android.os.Environment
 import android.widget.Toast
 import com.lowagie.text.*
 import com.lowagie.text.pdf.PdfWriter
-import com.lowagie.text.pdf.draw.DottedLineSeparator
 import harmony.java.awt.Color
 import com.zipsalud.R
-import com.zipsalud.controlador.EnfCardiacasDAO
-import com.zipsalud.controlador.infoBasicaHelper
-import com.zipsalud.modelo.EnfCardiacas
 import com.zipsalud.modelo.IdUsuario
-import com.zipsalud.modelo.InfoBasica
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
-import java.text.SimpleDateFormat
-import java.util.*
 
-class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boolean, Boolean, Boolean>() {
+
+class GeneradorPDF(@SuppressLint("StaticFieldLeak") val context:Context, var infPDF:InformacionPDF): AsyncTask<Boolean, Boolean, Boolean>() {
 
     companion object {
         private const val NOMBRE_DIRECTORIO = "ZipSaludPDF"
         private var NOMBRE_DOCUMENTO = "ZipSaludPdf.pdf"
-        private const val ETIQUETA_ERROR = "ERROR"
         private val idUsuario: String = IdUsuario.getInstance().idUsuario
     }
 
@@ -41,12 +35,12 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
 
     override fun doInBackground(vararg p0: Boolean?): Boolean {
         var resultado:Boolean = true
-        val documento:Document = Document()
+        val documento = Document()
         val r: Resources = context.resources
 
         try {
-            var file:File? = crearFichero(NOMBRE_DOCUMENTO)
-            var ficheroPdf: FileOutputStream = FileOutputStream(file?.getAbsolutePath())
+            val file:File? = crearFichero(NOMBRE_DOCUMENTO)
+            val ficheroPdf: FileOutputStream = FileOutputStream(file?.getAbsolutePath())
 
             var writer: PdfWriter = PdfWriter.getInstance(documento, ficheroPdf)
 
@@ -108,8 +102,8 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
      * @return Paragraph
      */
     private fun crearTitulo(titulo:String? ): Paragraph {
-        var font: Font = FontFactory.getFont(FontFactory.HELVETICA, 14f, Font.BOLD, Color.DARK_GRAY);
-        var t = Paragraph(titulo,font)
+        val font: Font = FontFactory.getFont(FontFactory.HELVETICA, 14f, Font.BOLD, Color.DARK_GRAY);
+        val t = Paragraph(titulo,font)
         t.setAlignment(Element.ALIGN_CENTER)
         return t
     }
@@ -117,12 +111,12 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
     /**
      * Crea un Subtitulo
      *
-     * @param Subtitulo
+     * @param Subtitle
      * @return Paragraph
      */
     private fun crearSubTitulo(titulo:String? ): Paragraph {
-        var font: Font = FontFactory.getFont(FontFactory.HELVETICA, 12f, Font.BOLD, Color.DARK_GRAY);
-        var t = Paragraph(titulo,font)
+        val font: Font = FontFactory.getFont(FontFactory.HELVETICA, 12f, Font.BOLD, Color.DARK_GRAY);
+        val t = Paragraph(titulo,font)
         t.setAlignment(Element.ALIGN_LEFT)
         return t
     }
@@ -130,11 +124,11 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
     /**
      * Crea un encabezado
      *
-     * @param titulo
+     * @param title
      * @return Phrase
      */
     private fun crearEncabezado(titulo:String ): Phrase {
-        var font: Font = FontFactory.getFont(FontFactory.HELVETICA, 18f, Font.BOLD, Color.BLUE)
+        val font: Font = FontFactory.getFont(FontFactory.HELVETICA, 18f, Font.BOLD, Color.BLUE)
         return  Phrase(titulo,font)
     }
 
@@ -148,7 +142,7 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
      */
     @Throws(IOException::class)
     private fun crearFichero(nombreFichero:String):File? {
-        var ruta: File? = getRuta()
+        val ruta: File? = getRuta()
         var fichero: File? = null
         if (ruta != null)
             fichero = File(ruta, nombreFichero)
@@ -165,11 +159,9 @@ class GeneradorPDF(val context:Context,var infPDF:InformacionPDF): AsyncTask<Boo
         if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageDirectory())){
             ruta =  File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
                     NOMBRE_DIRECTORIO)
-            if (ruta != null) {
-                if (!ruta.mkdirs()) {
-                    if (!ruta.exists()) {
-                       return null
-                    }
+            if (!ruta.mkdirs()) {
+                if (!ruta.exists()) {
+                   return null
                 }
             }
         }

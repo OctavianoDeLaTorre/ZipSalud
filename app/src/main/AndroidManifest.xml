@@ -27,9 +27,9 @@
         </provider>
 
         <activity
-            android:name=".menuActivity"
+            android:name=".Login"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar_2">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,8 +37,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".menuActivity"
+            android:theme="@style/AppTheme.NoActionBar_2" />
 
         <activity android:name=".Actividades" />
         <activity android:name=".EnfermedadesCardiovasculares"/>

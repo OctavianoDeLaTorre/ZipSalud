@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //Instanciar objeto de opciones de login de google
+        /*Instanciar objeto de opciones de login de google
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -54,6 +54,8 @@ public class Login extends AppCompatActivity {
                 .build();
 
         //Intaciar el boton de login
+
+        */
         signInButton =  findViewById(R.id.btnLogin);
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,14 +66,19 @@ public class Login extends AppCompatActivity {
 
         pbLogin = findViewById(R.id.pbLogin);
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        IdUsuario.getInstance().setIdUsuario(Objects.requireNonNull("666"));
     }
 
     //Metodo que se ejecutara al en el evento del boton btnLogin
     public void onclikLogin(){
-        signInButton.setVisibility(View.GONE);
+
+        iniciarSesion();
+       /* signInButton.setVisibility(View.GONE);
         pbLogin.setVisibility(View.VISIBLE);
         Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
         startActivityForResult(intent, SIGN_IN_CODE);
+
+        */
     }
 
 
@@ -107,9 +114,9 @@ public class Login extends AppCompatActivity {
 
     private void iniciarSesion() {
         Intent i = new Intent(this,Datos.class);
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        signInButton.setVisibility(View.VISIBLE);
-        pbLogin.setVisibility(View.GONE);
+        //i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        //signInButton.setVisibility(View.VISIBLE);
+        //pbLogin.setVisibility(View.GONE);
         startActivity(i);
     }
 }

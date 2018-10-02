@@ -99,13 +99,13 @@ public class Login extends AppCompatActivity {
         } else {
             signInButton.setVisibility(View.VISIBLE);
             pbLogin.setVisibility(View.GONE);
-            Snackbar.make(pbLogin, R.string.no_login, Snackbar.LENGTH_LONG)
+            /*Snackbar.make(pbLogin, R.string.no_login, Snackbar.LENGTH_LONG)
                     .setAction(R.string.interntar, new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             onclikLogin();
                         }
-                    }).show();
+                    }).show();*/
             //Toast.makeText(this, R.string.no_login, Toast.LENGTH_LONG).show();
         }
         if(vibrator.hasVibrator())

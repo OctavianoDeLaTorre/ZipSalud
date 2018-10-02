@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zipsalud">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.providers.FileProvider"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/paths" />
@@ -36,14 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".menuActivity"
             android:theme="@style/AppTheme.NoActionBar_2" />
-
         <activity android:name=".Actividades" />
-        <activity android:name=".EnfermedadesCardiovasculares"/>
-
+        <activity android:name=".EnfermedadesCardiovasculares" />
         <activity android:name=".EnfermedadesCongenitas" />
         <activity android:name=".EnfermedadesFamiliares" />
         <activity android:name=".EnfermedadesSistemaNervioso" />
@@ -55,10 +51,13 @@
         <activity android:name=".QR" />
         <activity android:name=".Configuracion" />
         <activity android:name=".NuevoTratamiento" />
-        <activity android:name=".NuevaCita"></activity>
-        
+        <activity android:name=".NuevaCita" />
+        <activity android:name=".Alimentacion_Y_Habitos" />
+        <activity android:name=".Sustancias" />
+        <activity android:name=".AntecedentesPersonalesPatologicos" />
+        <activity android:name=".AntecedentesGinecologicos" />
+        <activity android:name=".VidaSexual" />
+        <activity android:name=".Antecedentes_Heredofamiliares"></activity>
     </application>
-
-
 
 </manifest>

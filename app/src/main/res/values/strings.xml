@@ -24,8 +24,10 @@
     <string name="medico">En los últimos 12 meses ¿Ha visto por cualquier razón a algún profesional de la salud? Médico
 	general, especialista, otro.</string>
     <string name="consumo">Consume o ha consumido en forma repetida o prolongada alguna de las siguientes sustancias:</string>
-    <string name="cigarro">¿Cigarrillo en los últimos 12 meses?</string>
-    <string name="alcohol">¿Bebidas alcohólicas?</string>
+    <string name="fuma">¿Fuma?</string>
+    <string name="f_edad">¿Desde que edad?</string>
+    <string name="cigarros_dia">¿Cuántos cigarros al día?</string>
+    <string name="alcohol">¿Consume bebidas alcohólicas?</string>
     <string name="estupefacientes">¿Estupefacientes?</string>
     <string name="sufre_hipertension">¿Sufre o ha sufrido de hipertensión arterial?</string>
     <string name="actividad">¿Realiza actividad física moderada durante la semana?</string>
@@ -52,6 +54,7 @@
     <string name="corazon">Problemas cardiovasculares</string>
     <string name="renal">Problemas renales</string>
     <string name="tiroideos">Problemas tiroideos</string>
+    <string name="tiroides">Hipotiroidismo/hipertiroidismo</string>
     <string name="autoinmunes">Problemas autoinmunes</string>
 
     <!-- Almentación-->
@@ -63,6 +66,7 @@
     <string name="frutas">Frutas</string>
     <string name="cereales">Cereales</string>
     <string name="leguminosas">Leguminosas</string>
+    <string name="agua">Agua</string>
     <string name="piezas">piezas</string>
     <string name="veces">Veces</string>
     <string name="lt">Litros por día</string>
@@ -73,7 +77,10 @@
     <string name="procedimiento">¿Tiene conocimiento de que deba practicarse algún procedimiento quirúrgico por
     enfermedad del corazón, medula ósea, y/o cornea?</string>
     <string name="cirugia">¿Se ha sometido a algún tipo de cirugía?</string>
-    <string name="reemplazos">¿Se ha sometido o sabe que deba someterse a reemplazos articulares? Especifique cual</string>
+    <string name="fractura">¿Ha sufrido de alguna fractura, esguince o luxación?</string>
+    <string name="transfusion">¿Le han realizado transfusiones sangíneas?</string>
+    <string name="hospitalizacion">¿Ha estado hospitalizado anteriormente</string>
+    <string name="causas">Describa las causas</string>
 
     <string name="cardiovascular">Ha sufrido o sufre enfermedades del aparato cardiovascular como:</string>
     <string name="aneurismas">¿Aneurismas?</string>
@@ -146,8 +153,8 @@
     <string name="ok">Aceptar</string>
     <string name="inf_qr">Inforación QR</string>
     <string name="login">Iniciar sesión</string>
-    <string name="interntar">Reintentar</string>
-
+    <string name="n_medico">Médico</string>
+    <string name="motivo">Motivo de la cita</string>
     <string name="qr_desc">El código QR generado por ZipSalud con tiene la información básica del
         usuario como nombre completo, dirección, teléfono, tipo de sangre, alergias y fecha de
         nacimiento.
@@ -156,5 +163,36 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="embriaguez">¿Llega a la embriaguez?</string>
+    <string name="tipo_bebidas">¿Qué tipo de bebidas consume?</string>
+    <string name="drogas">¿Consume cocaína, marihuana o algún otro tipo de droga?</string>
+    <string name="especifique">Especifique</string>
+    <string name="edad_menstruacion">¿A qué edad fue su primer menstruación?</string>
+    <string name="ciclos">¿Ciclos regulares o irregulares?</string>
+    <string name="regulares">Regulares</string>
+    <string name="irregulares">Irregulares</string>
+    <string name="dias">¿Cada cuántos días?</string>
+    <string name="sangrado">Días de sangrado:</string>
+    <string name="ul_mesntruacion">Fecha de ultima menstruación</string>
+    <string name="v_sexual">¿Inicio de vida sexual?</string>
+    <string name="menopausia">¿A qué edad dejó de mestruar, si fuera el caso?</string>
+    <string name="papanicolaou">¿Se ha realizado papanicolaou? Indique cuando y los resultados</string>
+    <string name="mastografia">¿Se ha realizado exploración de mama y mastografía? Indique cuando y los resultados</string>
+    <string name="parejas">Número de parejas sexualmente activas</string>
+    <string name="embarazos">Número de embarazos</string>
+    <string name="partos">Número de partos</string>
+    <string name="abortos">¿Cuántos abortos?</string>
+    <string name="semana">¿En qué semana del embarazo?</string>
+    <string name="cesareas">¿Cuántas cesáreas?</string>
+    <string name="motivo_cesarea">¿Por qué motivo?</string>
+    <string name="fecha_cesarea">Fecha de última cesárea</string>
+    <string name="metodos">Métodos anticonceptivos</string>
+    <string name="ets">Enfermedades de transmisión sexual y tratamiento</string>
+    <string name="aseo_dental">Frecuencia de aseo dental</string>
+    <string name="baño">¿Con qué frecuencia se baña?</string>
+    <string name="ropa">¿Con qué frecuencia se cambia la ropa normalmente?</string>
+    <string name="desinfeccion">¿Desinfecta los alimentos?</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="ver_cita">Ver citas</string>
+    <string name="ver_tratamientos">Ver tratamientos</string>
 </resources>

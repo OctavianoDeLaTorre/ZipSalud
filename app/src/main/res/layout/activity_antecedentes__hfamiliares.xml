@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/select"
-    android:background="@color/bg_gris"
-    tools:context=".Antecedentes_Heredofamiliares">
+    tools:context=".Antecedentes_HFamiliares">
 
     <TextView
         android:id="@+id/textureView"

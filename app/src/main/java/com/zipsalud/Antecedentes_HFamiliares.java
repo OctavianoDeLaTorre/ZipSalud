@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Antecedentes_Heredofamiliares extends AppCompatActivity {
+public class Antecedentes_HFamiliares extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_antecedentes__heredofamiliares);
+        setContentView(R.layout.activity_antecedentes__hfamiliares);
     }
     public void alimentacion(View v){
         Intent i = new Intent(this,Alimentacion_Y_Habitos.class);

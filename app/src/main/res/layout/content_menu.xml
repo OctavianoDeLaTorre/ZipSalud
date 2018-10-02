@@ -12,6 +12,96 @@
     android:background="@color/bg_gris"
     tools:showIn="@layout/app_bar_menu">
 
+    <CalendarView
+        android:id="@+id/calendarView3"
+        android:layout_width="match_parent"
+        android:dateTextAppearance="@style/CalenderViewWeekCustomText"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_colorRipple="#99FFFFFF"
+        fab:fab_shadowColor="#66000000"
+        fab:fab_showShadow="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_labels_colorNormal="@color/bg_gris"
+        fab:menu_labels_colorPressed="@color/bg_grisOscuro"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="true"
+        fab:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/verCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_foreground_view"
+            app:fab_colorNormal="@color/bg_gris"
+            app:fab_colorPressed="@color/bg_grisOscuro"
+            app:fab_label="@string/ver_cita"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/verTratamientos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_foreground_view"
+            app:fab_colorNormal="@color/bg_gris"
+            app:fab_colorPressed="@color/bg_grisOscuro"
+            app:fab_label="@string/ver_tratamientos"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabTratamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_medicine2"
+            app:fab_colorNormal="@color/bg_gris"
+            app:fab_colorPressed="@color/bg_grisOscuro"
+            fab:fab_label="@string/at"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_care2"
+            app:fab_colorNormal="@color/bg_gris"
+            app:fab_colorPressed="@color/bg_grisOscuro"
+            fab:fab_label="@string/ac"
+            fab:fab_size="mini" />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
 
 
 </android.support.constraint.ConstraintLayout>

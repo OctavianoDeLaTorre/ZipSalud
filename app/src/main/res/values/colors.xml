@@ -3,7 +3,7 @@
     <color name="colorPrimary">#00d5ff</color>
     <color name="primaryLightColor">#6cffff</color>
     <color name="colorPrimaryDark">#00a3cc</color>
-    <color name="secondaryColor">#42a5f5</color>
+    <color name="secondaryColor">#00B7FF</color>
     <color name="secondaryLightColor">#80d6ff</color>
     <color name="secondaryDarkColor">#0077c2</color>
     <color name="primaryTextColor">#000000</color>
@@ -20,5 +20,6 @@
     <color name="draw2">#3fdfcf</color>
     <color name="bg">#fafafa</color>
     <color name="bg_gris">#E0E1E0</color>
+    <color name="bg_grisOscuro">#757575</color>
     <color name="blanco">#FFFFFF</color>
 </resources>

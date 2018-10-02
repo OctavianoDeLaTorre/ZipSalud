@@ -57,7 +57,7 @@
         <activity android:name=".AntecedentesPersonalesPatologicos" />
         <activity android:name=".AntecedentesGinecologicos" />
         <activity android:name=".VidaSexual" />
-        <activity android:name=".Antecedentes_Heredofamiliares"></activity>
+        <activity android:name=".Antecedentes_HFamiliares"></activity>
     </application>
 
 </manifest>

@@ -208,10 +208,10 @@ public class menuActivity extends AppCompatActivity
 
 
         FragmentManager fm = getSupportFragmentManager();
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_pdf) {
            fm.beginTransaction().replace(R.id.clEscenario, new QrFragment()).commit();
            this.setTitle(R.string.texqr);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_qr) {
             InformacionPDF infPDF = new InformacionPDF(this);
 
             //Toast.makeText(this,infPDF.getInfBasica(),Toast.LENGTH_LONG).show();
@@ -219,13 +219,11 @@ public class menuActivity extends AppCompatActivity
             //Toast.makeText(this,infPDF.getEnfCardiacas(),Toast.LENGTH_LONG).show();
 
             new GeneradorPDF(this,infPDF).execute();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_actualizar) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_configuracion) {
 
         } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 
